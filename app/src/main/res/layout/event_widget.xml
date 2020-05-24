@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/widgetEvent"
+
+    >
+
+    <TextView
+        android:id="@+id/event_text"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_row="0"
+        android:text="Cabelozada"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:layout_column="1"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/days_text"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:text="25"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+ />
+
+    <TextView
+        android:id="@+id/situation_text"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:textAlignment="center"
+        android:text="days since"
+        android:textColor="@android:color/white"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom"
+        android:padding="10dp"/>
+
+</GridLayout>
