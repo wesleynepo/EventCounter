@@ -46,7 +46,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        adapter.reload();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        adapter.reload();
+    }
 }

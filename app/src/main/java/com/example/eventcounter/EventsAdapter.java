@@ -1,5 +1,6 @@
 package com.example.eventcounter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,19 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventViewH
             textViewEvent = view.findViewById(R.id.event_text);
             textViewSituation = view.findViewById(R.id.situation_text);
 
+
+            containerView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    final Event actual = (Event) containerView.getTag();
+                    Intent intent = new Intent(v.getContext(), EventActivity.class);
+                    intent.putExtra("id", actual.id);
+                    intent.putExtra("eventName", actual.event);
+                    intent.putExtra("eventDate", actual.eventDate);
+                    v.getContext().startActivity(intent);
+                }
+            });
+
         }
     }
 
@@ -47,6 +61,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventViewH
         Event current = events.get(position);
         holder.textViewEvent.setText(current.event);
         setTimeText(current.eventDate,holder);
+        holder.containerView.setTag(current);
     }
 
     @Override
