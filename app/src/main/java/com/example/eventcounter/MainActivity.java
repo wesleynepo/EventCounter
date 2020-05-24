@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+        recyclerView.setBackgroundResource(R.color.colorAccent);
 
         FloatingActionButton button = findViewById(R.id.button);
 

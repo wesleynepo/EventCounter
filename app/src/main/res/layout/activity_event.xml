@@ -19,7 +19,8 @@
         android:calendarViewShown="false"
         android:datePickerMode="spinner"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="95dp" />
+        tools:layout_editor_absoluteY="95dp"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
