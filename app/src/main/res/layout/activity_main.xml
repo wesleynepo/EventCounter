@@ -18,7 +18,7 @@
         android:layout_gravity="right|bottom"
         android:layout_margin="15dp"
         app:srcCompat="@android:drawable/ic_input_add"
-        android:tint="@color/design_default_color_primary"
+        android:tint="@android:color/holo_orange_dark"
         android:backgroundTint="@color/colorPrimary"
         />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

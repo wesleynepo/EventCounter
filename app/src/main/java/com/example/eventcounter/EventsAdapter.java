@@ -86,7 +86,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventViewH
         if (daysBetween > 0) {
             holder.textViewSituation.setText("days since");
         } else {
-            holder.textViewSituation.setText("days until ");
+            holder.textViewSituation.setText("days until");
         }
 
         holder.textViewDays.setText(Math.abs(daysBetween) + "");
