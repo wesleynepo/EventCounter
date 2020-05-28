@@ -17,4 +17,6 @@ public interface EventDAO {
     @Query("UPDATE events SET eventDate = :eventDate, event = :event WHERE id = :id")
     void save(String event, String eventDate, int id);
 
+    @Query("DELETE FROM events WHERE id = :id")
+    void delete(int id);
 }

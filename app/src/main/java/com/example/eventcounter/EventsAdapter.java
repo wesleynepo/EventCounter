@@ -30,7 +30,6 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventViewH
             textViewEvent = view.findViewById(R.id.event_text);
             textViewSituation = view.findViewById(R.id.situation_text);
 
-
             containerView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -43,10 +42,14 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventViewH
                 }
             });
 
+
+
+
         }
     }
 
     private List<Event> events = new ArrayList<>();
+
 
     @NonNull
     @Override
@@ -90,5 +93,11 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventViewH
         }
 
         holder.textViewDays.setText(Math.abs(daysBetween) + "");
+    }
+
+    public void delete(int position ) {
+        MainActivity.database.eventDAO().delete(events.get(position).id);
+        this.reload();
+        notifyDataSetChanged();
     }
 }
