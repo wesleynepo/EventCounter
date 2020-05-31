@@ -1,6 +1,8 @@
 # Event Counter 
 
-Esse ‚ o meu projeto final do curso de introdu‡Æo a ciˆncia da computa‡Æo de Harvard ( CS50x) destinado a aprender mais sobre o desenvolvimento Java para Android, o projeto consiste em um aplicativo para demonstrar em widgets o nome de um evento e quantos dias faltam ou fazem para a data do mesmo. Eu costumo esquecer quanto tempo faz que eu to deixando meu cabelo crescer, que eu nÆo limpo o computador entre outras coisas e para mim ‚ muito £til ter em um £nico lugar todas essas datas.
+![](preview.gif)
+
+Esse â€š o meu projeto final do curso de introduÃ§Ã£o a ciÃªncia da computaÃ§Ã£o de Harvard ( CS50x ) destinado a aprender mais sobre o desenvolvimento Java para Android, o projeto consiste em um aplicativo para demonstrar em widgets o nome de um evento e quantos dias faltam ou fazem para a data do mesmo. Eu costumo esquecer quanto tempo faz que eu to deixando meu cabelo crescer, que eu nÃ†o limpo o computador entre outras coisas e para mim â€š muito Â£til ter em um Â£nico lugar todas essas datas.
 
 ## Objetivos
 
