@@ -84,7 +84,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventViewH
         LocalDate dateEvent = LocalDate.parse(date,formatter);
         LocalDate dateNow   = LocalDate.parse(LocalDate.now().toString(),formatter);
 
-        long daysBetween = Duration.between(dateEvent.atStartOfDay(),dateNow.atStartOfDay()).toDays();
+        Long daysBetween = Duration.between(dateEvent.atStartOfDay(),dateNow.atStartOfDay()).toDays();
 
         if (dateEvent.isBefore(dateNow)) {
             holder.textViewSituation.setText("days since");
@@ -92,7 +92,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventViewH
             holder.textViewSituation.setText("days until");
         }
 
-        holder.textViewDays.setText(Math.abs(daysBetween) + "");
+        holder.textViewDays.setText(daysBetween.toString());
     }
 
     public void delete(int position ) {
