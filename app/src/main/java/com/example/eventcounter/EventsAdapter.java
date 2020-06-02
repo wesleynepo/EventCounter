@@ -86,7 +86,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventViewH
 
         long daysBetween = Duration.between(dateEvent.atStartOfDay(),dateNow.atStartOfDay()).toDays();
 
-        if (daysBetween > 0) {
+        if (dateEvent.isBefore(dateNow)) {
             holder.textViewSituation.setText("days since");
         } else {
             holder.textViewSituation.setText("days until");
